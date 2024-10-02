@@ -14,48 +14,39 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
-  - block: slider
+  - block: slider  # 슬라이더 블록 추가
     content:
       slides:
+        - title: <span style="font-size:90%">game</span>
+          content: <span style="font-size:90%">게임 개발</span>
+          align: center
+          background:
+            image:
+              filename: images/unity.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 
-      - title: <span style="font-size:90%">AI</span>
-        content: <span style="font-size:90%">게임개발<span style="font-size:90%">
-        align: center
-        background:
-          image:
-            filename: images/unity.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
+        - title: <span style="font-size:90%">graphics </span>
+          content: <span style="font-size:90%">다이렉트X</span>
+          align: center
+          background:
+            image:
+              filename: images/directx.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 
-      - title: <span style="font-size:90%">Medical AI</span>
-        content: <span style="font-size:90%">그래픽스</span>
-        align: center
-        background:
-          image:
-            filename: directx.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-
-      - title: <span style="font-size:90%">Healthcare</span>
-        content: <span style="font-size:90%">J-pop, J-rock</span>
-        align: center
-        background:
-          image:
-            filename: rock.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'         
-    design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '350px'
-      is_fullscreen: true
-      # Automatically transition through slides?
-      loop: true
-      # Duration of transition between slides (in ms)
-      interval: 3000
+        - title: <span style="font-size:90%">music</span>
+          content: <span style="font-size:90%">J-rock, J-pop</span>
+          align: center
+          background:
+            image:
+              filename: images/rock.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
 ---
