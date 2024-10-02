@@ -4,11 +4,11 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Experience
-    url: experience/
+  - name: About
+    url: About/
     weight: 10
     haschildren: true
-  - parent: Experience
+  - parent: About
     name: Contact
     url: contact/
   - parent: Experience  
@@ -19,5 +19,5 @@ main:
     weight: 20
   
 ---
-<h1> 파이팅 </h1>
+
 
