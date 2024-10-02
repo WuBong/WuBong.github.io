@@ -1,7 +1,7 @@
 ## 나에 대해서
 
 <div style="position: relative; text-align: center;">
-    <img src="/images/your-image.jpg" alt="Profile Image" style="width:100%; opacity: 0.7;">
+    <img src="avatar.jpg" alt="Profile Image" style="width:100%; opacity: 0.7;">
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
         <h2>안녕하세요 저는 음악과 그림에 관심이 많고, 게임개발에도 관심이 많은 컴퓨터인공지능학부생 입니다.</h2>
         <p><strong>생년월일:</strong> 2000-05-05</p>
