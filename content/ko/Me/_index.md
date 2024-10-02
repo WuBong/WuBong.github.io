@@ -1,4 +1,4 @@
-<img src="avatar.jpg" width="200" height="300">
+<img src="avatar.jpg" width="1000" height="1000">
 
 ## 나에 대해서
 
