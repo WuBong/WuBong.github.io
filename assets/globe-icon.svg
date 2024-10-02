@@ -1,0 +1,8 @@
+<div class="language-switcher">
+    <a href="/en/" title="English">
+        <img src="/images/icons/globe-icon.svg" width="24" height="24" alt="English">
+    </a>
+    <a href="/ko/" title="한국어">
+        <img src="/images/icons/globe-icon.svg" width="24" height="24" alt="한국어">
+    </a>
+</div>

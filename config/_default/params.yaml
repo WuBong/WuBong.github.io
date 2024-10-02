@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: light
-  color: indigo
+  mode: system
+  color: emerald
 
 # SEO
 marketing:
@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
+    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -31,25 +31,43 @@ header:
   navbar:
     enable: true
     blox: "navbar"
-    align: "center"
     fixed_to_top: true
-    logo:
-      text: ""
-      # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
-    button:
-      enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
     show_search: true
     show_theme_chooser: true
+    logo:
+      text: "정우현"
+    language_switcher:
+      enable: true
+      languages:
+        - code: "en"
+          label: "English"
+          icon: "/assets/globe-icon.svg" # 실제 파일 경로에 맞게 수정
+          url: "/en/"
+        - code: "ko"
+          label: "한국어"
+          icon: "/assets/globe-icon.svg" # 실제 파일 경로에 맞게 수정
+          url: "/ko/"
+    
+      
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} Me. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
 
 # Localization
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
+
+# Site features
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false

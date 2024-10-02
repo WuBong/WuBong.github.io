@@ -1,0 +1,49 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .custom-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+  }
+  
+  .custom-card .card-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li ul {
+    display: none; /* 기본적으로 서브 메뉴 숨김 */
+    position: absolute; /* 서브 메뉴를 부모 메뉴 아래에 위치시킴 */
+    left: 0;
+  }
+  
+  nav ul li:hover ul {
+    display: block; /* 마우스 오버 시 서브 메뉴 표시 */
+  }
+  
+  
