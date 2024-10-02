@@ -5,12 +5,11 @@
 
 main:
   - name: About
-    url: About/
     weight: 10
     haschildren: true
   - parent: About
-    name: Me!
-    url: Me!/
+    name: Me
+    url: Me/
   - parent: About
     name: Contact
     url: contact/
