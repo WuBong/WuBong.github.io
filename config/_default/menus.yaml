@@ -9,11 +9,12 @@ main:
     weight: 10
     haschildren: true
   - parent: About
+    name: Me!
+    url: Me!/
+  - parent: About
     name: Contact
     url: contact/
-  - parent: Experience  
-    name: Projects
-    url: projects/
+
   - name: Teaching
     url: teaching/
     weight: 20
