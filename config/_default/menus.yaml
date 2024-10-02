@@ -8,7 +8,7 @@ main:
     weight: 10
     haschildren: true
   - parent: About
-    name: Me
+    name: Me!
     url: me/
   - parent: About
     name: Contact
