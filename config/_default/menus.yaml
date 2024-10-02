@@ -4,8 +4,11 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: About
+  - name: Home
+    url: /
     weight: 10
+  - name: About
+    weight: 20
     haschildren: true
   - parent: About
     name: Me!
@@ -13,10 +16,22 @@ main:
   - parent: About
     name: Contact
     url: contact/
-
   - name: Projects
     url: projects/
-    weight: 20
+    weight: 30
+  - name: Notification
+    url: notification/
+    weight: 40
+  - name: Learning
+    weight: 50
+    haschildren: true
+  - parent: Learning
+    name: 2024-spring
+    url: 2024spring/
+  - parent: Learning
+    name: 2024-autumn
+    url: 2024autumn/
+
   
 ---
 
