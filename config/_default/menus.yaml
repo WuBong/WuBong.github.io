@@ -9,13 +9,13 @@ main:
     haschildren: true
   - parent: About
     name: Me
-    url: Me/
+    url: me/
   - parent: About
     name: Contact
     url: contact/
 
-  - name: Teaching
-    url: teaching/
+  - name: Projects
+    url: projects/
     weight: 20
   
 ---
