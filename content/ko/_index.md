@@ -31,7 +31,5 @@ sections:
           parallax: false
 
   - block: slider
-    position: center
-    design:
-      css_class: slider-container
+
 ---
