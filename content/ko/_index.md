@@ -30,5 +30,12 @@ sections:
           size: cover
           position: center
           parallax: false
+  - block: markdown
+    content:
+      title: '📚 projects'
+      subtitle: ''
+    design:
+      columns: '1'
+  - block: projects
 
 ---
