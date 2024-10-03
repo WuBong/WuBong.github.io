@@ -73,6 +73,7 @@ sections:
     design:
       view: article-grid
       columns: 1
+  - block: slider
   - block: collection
     id: news
     content:
@@ -122,6 +123,5 @@ sections:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
-  - block: slider
 
 ---
