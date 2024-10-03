@@ -29,9 +29,9 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: slider
+   - block: slider
+    position: center
+    design:
+      css_class: slider-container
 
-
-  - block: card1
-  - block: card2
 ---

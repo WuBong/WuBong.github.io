@@ -1,53 +1,72 @@
-<style>
-.slider {
-    width: 100%;                                 
-    overflow: hidden;
-    position: relative;
-}
-.slide {
-    float: left;
-    width: 100%;
-    position: relative;
-}
-img {
-    width: 100%;
-    height: auto;                                                        
-}
-</style>
-    <div class="slider">
-        <div class="slide">
-            <img src="/images/rock.jpg" alt="이미지 1">
-        </div>
-        <div class="slide">
-            <img src="/images/directx.jpg" alt="이미지 2">
-        </div>
-        <div class="slide">
-            <img src="/images/unity.jpg" alt="이미지 3">
-        </div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드쇼</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .slideshow {
+            position: relative;
+            width: 1000px;
+            height: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 300%; /* 100% * number of images */
+        }
+        .slide {
+            width: 100%; /* 각 슬라이드가 1/3을 차지 */
+            flex-shrink: 0;
+        }
+        img {
+          width: 100%; /* 슬라이드의 전체 너비를 차지 */
+    height: auto; /* 높이는 자동 조정 */
+    object-fit: cover; /* 이미지를 잘라서 채우기 */
+        }
+        .slider-container {
+       display: flex;
+        justify-content: center; /* 수평 중앙 정렬 */
+       align-items: center; /* 수직 중앙 정렬 */
+        height: 100%; /* 원하는 높이로 설정 */
+      }
+      
+    </style>
+</head>
+<body>
+<div class="slider-container">
+<div class="slideshow">
+    <div class="slides">
+        <div class="slide"><img src="/images/unity.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="/images/directx.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="/images/rock.jpg" alt="Image 3"></div>
     </div>
-    
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const slideCount = slides.length;
- 
-        function showSlide(n) {
-            slides.forEach(slide => slide.style.display = 'none');
-            slides[n].style.display = 'block';
-        }
- 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slideCount;
-            showSlide(currentSlide);
-        }
- 
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-            showSlide(currentSlide);
-        }
- 
-        document.addEventListener('DOMContentLoaded', () => {
-            showSlide(currentSlide);
-            setInterval(nextSlide, 3000); // 3초마다 자동 슬라이드
-        });
-    </script>
+</div>
+</div>
+
+<script>
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+    let index = 0;
+
+    function showNextSlide() {
+        index = (index + 1) % slideCount;
+        slides.style.transform = translateX(-${index * (100 / slideCount)}%);
+    }
+
+    setInterval(showNextSlide, 3000); // 3초마다 다음 슬라이드로 이동
+</script>
+
+</body>
+</html>
