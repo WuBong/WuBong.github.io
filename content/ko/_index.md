@@ -30,4 +30,8 @@ sections:
           position: center
           parallax: false
   - block: slider
+
+
+  - block: card1
+  - block: card2
 ---
