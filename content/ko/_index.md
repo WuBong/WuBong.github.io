@@ -31,4 +31,5 @@ sections:
           parallax: false
 
   - block: slider
+    position: center
 ---
