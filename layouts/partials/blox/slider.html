@@ -35,16 +35,24 @@
             height: 100%;
             object-fit: cover;
         }
+        .slider-container {
+       display: flex;
+        justify-content: center; /* 수평 중앙 정렬 */
+       align-items: center; /* 수직 중앙 정렬 */
+        height: 100%; /* 원하는 높이로 설정 */
+      }
+      
     </style>
 </head>
 <body>
-
+<div class="slider-container">
 <div class="slideshow">
     <div class="slides">
         <div class="slide"><img src="/images/unity.jpg" alt="Image 1"></div>
         <div class="slide"><img src="/images/directx.jpg" alt="Image 2"></div>
         <div class="slide"><img src="/images/rock.jpg" alt="Image 3"></div>
     </div>
+</div>
 </div>
 
 <script>

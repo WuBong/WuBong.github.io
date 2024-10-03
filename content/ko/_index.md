@@ -32,4 +32,6 @@ sections:
 
   - block: slider
     position: center
+    design:
+      css_class: slider-container
 ---
