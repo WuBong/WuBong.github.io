@@ -15,7 +15,7 @@ marketing:
     local_business_type: ''
     org_name: 'JeongWooHyeon portfolio site'
     description: 'JeongWooHyeon portfolio site'
-    ogImage: "/images/kong.jpg"
+    ogImage: '/images/kong.jpg'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
