@@ -29,9 +29,7 @@ sections:
           size: cover
           position: center
           parallax: false
-   - block: slider
-    position: center
-    design:
-      css_class: slider-container
+
+  - block: slider
 
 ---
