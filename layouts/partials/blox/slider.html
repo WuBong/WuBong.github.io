@@ -15,8 +15,8 @@
         }
         .slideshow {
             position: relative;
-            width: 1000px;
-            height: 800px;
+            width: 1000px; /* 원하는 너비로 설정 */
+            height: 800px; /* 원하는 높이로 설정 */
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,35 +24,31 @@
         .slides {
             display: flex;
             transition: transform 0.5s ease-in-out;
-            width: 300%; /* 100% * number of images */
+            width: 300%; /* 슬라이드 수에 따라 조정 (여기서는 3개) */
         }
         .slide {
-            width: 100%; /* 각 슬라이드가 1/3을 차지 */
+            width: 100%; /* 각 슬라이드가 100%를 차지 */
             flex-shrink: 0;
+            display: flex; /* 이미지 가운데 정렬을 위해 추가 */
+            justify-content: center; /* 수평 중앙 정렬 */
+            align-items: center; /* 수직 중앙 정렬 */
         }
         img {
-          width: 100%; /* 슬라이드의 전체 너비를 차지 */
-    height: auto; /* 높이는 자동 조정 */
-    object-fit: cover; /* 이미지를 잘라서 채우기 */
+            width: auto; /* 너비 자동 조정 */
+            height: 100%; /* 높이를 100%로 설정 */
+            object-fit: contain; /* 이미지를 비율에 맞게 조정하여 잘리지 않도록 설정 */
         }
-        .slider-container {
-       display: flex;
-        justify-content: center; /* 수평 중앙 정렬 */
-       align-items: center; /* 수직 중앙 정렬 */
-        height: 100%; /* 원하는 높이로 설정 */
-      }
-      
     </style>
 </head>
 <body>
 <div class="slider-container">
-<div class="slideshow">
-    <div class="slides">
-        <div class="slide"><img src="/images/unity.jpg" alt="Image 1"></div>
-        <div class="slide"><img src="/images/directx.jpg" alt="Image 2"></div>
-        <div class="slide"><img src="/images/rock.jpg" alt="Image 3"></div>
+    <div class="slideshow">
+        <div class="slides">
+            <div class="slide"><img src="/images/unity.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="/images/directx.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="/images/rock.jpg" alt="Image 3"></div>
+        </div>
     </div>
-</div>
 </div>
 
 <script>
@@ -61,8 +57,8 @@
     let index = 0;
 
     function showNextSlide() {
-        index = (index + 1) % slideCount;
-        slides.style.transform = translateX(-${index * (100 / slideCount)}%);
+        index = (index + 1) % slideCount; // 다음 슬라이드로 이동
+        slides.style.transform = `translateX(-${index * 100}%)`; // 한 번에 100% 이동
     }
 
     setInterval(showNextSlide, 3000); // 3초마다 다음 슬라이드로 이동
