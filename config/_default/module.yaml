@@ -21,7 +21,7 @@ mounts:
     target: assets/dist/community/blox/
     includeFiles: '**.css'
   - source: hugo-blox/blox/bootstrap
-    target: layouts/partials/blox/bootstrap/
+    target: layouts/partials/
     includeFiles: '**/*.html'
   - source: layouts
     target: layouts
