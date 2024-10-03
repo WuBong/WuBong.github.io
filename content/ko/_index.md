@@ -31,25 +31,11 @@ sections:
           position: center
           parallax: false
             - block: custom
-  - block: custom
+  - block: collection
     content:
-      title: 'Project Cards'
-      cards:
-        - title: 'Project 1'
-          description: 'Description of project 1.'
-          image: 'https://via.placeholder.com/300x150'
-          button_text: 'View More'
-          button_url: '#'
-        - title: 'Project 2'
-          description: 'Description of project 2.'
-          image: 'https://via.placeholder.com/300x150'
-          button_text: 'View More'
-          button_url: '#'
-        - title: 'Project 3'
-          description: 'Description of project 3.'
-          image: 'https://via.placeholder.com/300x150'
-          button_text: 'View More'
-          button_url: '#'
-    design:
-      css_class: 'card-section'
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+          - publication
 ---
