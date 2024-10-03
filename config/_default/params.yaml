@@ -15,9 +15,9 @@ marketing:
     local_business_type: ''
     org_name: ''
     description: 'WooHyeon's portfolio site'
-    twitter: 'WooHyeon's portfolio site'
+    twitter: 'GetResearchDev'
   analytics:
-    google_analytics: '전북대 정우현'
+    google_analytics: ''
     baidu_tongji: ''
     plausible: ''
     fathom: ''
