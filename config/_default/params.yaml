@@ -11,10 +11,11 @@ appearance:
 # SEO
 marketing:
   seo:
-    site_type: Person
+    site_type: Organization
     local_business_type: ''
-    org_name: ''
+    org_name: 'JeongWooHyeon portfolio site'
     description: 'JeongWooHyeon portfolio site'
+    ogImage: "/images/kong.jpg"
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
