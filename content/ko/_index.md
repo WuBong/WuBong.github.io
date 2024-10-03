@@ -7,10 +7,9 @@ type: landing
 design:
   # Default section spacing
 
-sections:
-  - block: slider
 
 sections:
+  - block: slider
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
