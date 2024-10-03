@@ -16,5 +16,6 @@ sections:
       text: ""
 ---
 
+{{< partial "card1.html" (dict "title" "Project 1" "image" "/images/project1.jpg" "description" "A brief description of Project 1." "button_text" "Learn More" "button_url" "#") >}}
 
-여기다가 뭘 말하면 어떻게 될려나
+{{< partial "card2.html" (dict "title" "Project 2" "image" "/images/project2.jpg" "description" "A brief description of Project 2." "button_text" "Read More" "button_url" "#") >}}
