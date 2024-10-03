@@ -23,6 +23,7 @@ sections:
         color: black
 
 
+sections:
   - block: slider
 
 ---
