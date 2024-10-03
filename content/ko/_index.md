@@ -34,7 +34,7 @@ sections:
         button_text: 'View More'
         button_url: '#'
   design:
-    css_class: 'card-section'
+    css_class: '/css/style.css'
     # 이곳에 아래 코드를 추가
-    custom_view: "card-grid.html"  # 추가된 부분
+    custom_view: "/layouts/partials/card-grid.html"  # 추가된 부분
 ---

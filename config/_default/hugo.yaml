@@ -6,7 +6,7 @@
 # Website name
 title: Hugo Academic CV Theme
 # Website URL
-baseURL: 'wubong.github.io/'
+baseURL: 'https://wubong.github.io/'
 
 ############################
 ## LANGUAGE
