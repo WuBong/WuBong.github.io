@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: emerald
+  color: green
 
 params:
   description: 'JeongWooHyeon portfolio site'  # 카카오톡이나 소셜미디어에 뜨는 설명
