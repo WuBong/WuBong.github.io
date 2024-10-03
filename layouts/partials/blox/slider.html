@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>슬라이드 쇼</title>
+    <title>슬라이드쇼</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+        * {
+            box-sizing: border-box;
         }
+
         .slideshow-container {
             position: relative;
-            max-width: 600px; /* 슬라이드 쇼 최대 너비 */
+            max-width: 600px; /* 슬라이드쇼 최대 너비 */
             margin: auto;
-            overflow: hidden;
         }
-        .slide {
+
+        .mySlides {
             display: none;
-            width: 100%;
         }
+
         img {
-            width: 100%;
-            height: auto;
+            width: 600px; /* 이미지 크기 */
+            height: 400px; /* 이미지 크기 */
         }
+
         .prev, .next {
             cursor: pointer;
             position: absolute;
@@ -36,60 +35,53 @@
             font-size: 18px;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
-            user-select: none;
         }
+
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
+
         .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0,0,0,0.8);
         }
     </style>
 </head>
 <body>
-
-<div class="slideshow-container">
-    <div class="slide">
-        <img src="/images/unity.jpg" alt="사진 1">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="/images/directx.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/images/rock.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/images/unity.jpg" style="width:100%">
+        </div>
+        <!-- 더 많은 이미지 추가 가능 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="slide">
-        <img src="/images/directx.jpg" alt="사진 2">
-    </div>
-    <div class="slide">
-        <img src="/images/rock.jpg" alt="사진 3">
-    </div>
 
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-</div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        const slides = document.getElementsByClassName("slide");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // 3초마다 슬라이드 변경
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex - 1].style.display = "block";  
-        setTimeout(showSlides, 3000); // 3초마다 슬라이드 변경
-    }
 
-    function changeSlide(n) {
-        slideIndex += n;
-        const slides = document.getElementsByClassName("slide");
-        if (slideIndex > slides.length) {slideIndex = 1}
-        if (slideIndex < 1) {slideIndex = slides.length}
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
-        slides[slideIndex - 1].style.display = "block";  
-    }
-</script>
-
+    </script>
 </body>
 </html>
