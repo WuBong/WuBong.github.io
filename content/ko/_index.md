@@ -8,6 +8,9 @@ design:
   # Default section spacing
 
 sections:
+  - block: slider
+
+sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
@@ -23,7 +26,6 @@ sections:
         color: black
 
 
-sections:
-  - block: slider
+
 
 ---
