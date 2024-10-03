@@ -122,4 +122,52 @@ sections:
         css_class: "bg-primary-700"
         css_style: ""
 ---
-{{< image-slider >}}
+<div class="slider"></div>
+    <div class="slides">
+        {{ range .Params.slides }}
+            <div class="slide">
+                <h2>{{ .title }}</h2>
+                <p>{{ .content }}</p>
+                <div class="background" style="background-image: url('{{ .background.image.filename }}');">
+                    <div class="link">
+                        <a href="{{ .link.url }}">{{ .link.text }}</a>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+    .slider {
+        position: relative;
+        overflow: hidden;
+    }
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+        min-width: 100%;
+        /* Customize the height as needed */
+        height: 400px; 
+    }
+    .background {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % slideCount;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000); // 슬라이드 전환 간격 (3000ms)
+});
+</script>
