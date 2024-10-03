@@ -11,7 +11,7 @@ imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v1
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
-  - path: github.com/HugoBlox/hugo-blox-builder/blob/main/modules/blox-bootstrap/layouts/partials/blocks/slider.html
+  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
