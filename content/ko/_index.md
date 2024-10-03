@@ -37,5 +37,5 @@ sections:
       text: ""
       filters:
         folders:
-          - publication
+          - card
 ---
