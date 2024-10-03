@@ -24,7 +24,7 @@
         .slides {
             display: flex;
             transition: transform 0.5s ease-in-out;
-            width: 300%; /* 100% * number of images */
+            width: 300%; /* 슬라이드 수에 따라 조정 */
         }
         .slide {
             width: 100%; /* 각 슬라이드가 100%를 차지 */
@@ -37,12 +37,6 @@
             width: auto; /* 너비 자동 조정 */
             height: 100%; /* 높이를 100%로 설정 */
             object-fit: contain; /* 이미지를 비율에 맞게 조정하여 잘리지 않도록 설정 */
-        }
-        .slider-container {
-            display: flex;
-            justify-content: center; /* 수평 중앙 정렬 */
-            align-items: center; /* 수직 중앙 정렬 */
-            height: 100%; /* 원하는 높이로 설정 */
         }
     </style>
 </head>
@@ -63,8 +57,8 @@
     let index = 0;
 
     function showNextSlide() {
-        index = (index + 1) % slideCount;
-        slides.style.transform = `translateX(-${index * (100 / slideCount)}%)`;
+        index = (index + 1) % slideCount; // 다음 슬라이드로 이동
+        slides.style.transform = `translateX(-${index * 100}%)`; // 한 번에 100% 이동
     }
 
     setInterval(showNextSlide, 3000); // 3초마다 다음 슬라이드로 이동
