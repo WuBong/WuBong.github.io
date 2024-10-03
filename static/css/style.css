@@ -51,3 +51,19 @@
 .card-button:hover {
     background-color: #45a049;
 }
+
+/* 기본 버튼 스타일 */
+button, .btn {
+    background-color: #007bff; /* 기본 버튼 색상 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 호버 전환 애니메이션 */
+}
+
+/* 마우스 호버 시 색상 변경 */
+button:hover, .btn:hover {
+    background-color: #0056b3; /* 호버 시 변경될 색상 */
+}
