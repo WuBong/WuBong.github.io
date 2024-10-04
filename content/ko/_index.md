@@ -9,6 +9,7 @@ design:
   # Default section spacing
   spacing: "6rem"
 
+
 sections:
   - block: resume-biography-3
     content:
@@ -31,6 +32,10 @@ sections:
           size: cover
           position: center
           parallax: false
+  sections:
+  - block: slider
+
+  sections:
   - block: markdown
     content:
       title: '📚 projects'
@@ -38,8 +43,5 @@ sections:
     design:
       columns: '1'
   - block: projects
-
-sections:
-  - block: slider
 
 ---
