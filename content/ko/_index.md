@@ -2,7 +2,8 @@
 # Leave the homepage title empty to use the site title
 title: ""
 date: 2022-10-24
-type: landing
+image: images/kong.jpg
+#type: landing
 
 design:
   # Default section spacing
