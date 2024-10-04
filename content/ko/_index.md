@@ -34,7 +34,7 @@ sections:
           parallax: false
   - block: slider
     position: center
-    
+
   - block: markdown
     content:
       title: '📚 projects'
@@ -42,6 +42,15 @@ sections:
     design:
       columns: '1'
   - block: projects
+
+  - block: markdown
+    content:
+      title: '2024autumn'
+      subtitle: ''
+    design:
+      columns: '1'
+  - block: menu
+
 
 
 ---
