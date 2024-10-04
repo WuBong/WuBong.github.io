@@ -6,10 +6,10 @@
 # Appearance
 appearance:
   mode: system
-  color: green
+  color: blue
 
 params:
-  description: 'JeongWooHyeon portfolio site'  # 카카오톡이나 소셜미디어에 뜨는 설명
+  description: '전북대 정우현 포트폴리오 사이트'  # 카카오톡이나 소셜미디어에 뜨는 설명
   ogImage: '/images/kong.jpg'  # 공유 시 대표 이미지 경로
 
 # SEO
