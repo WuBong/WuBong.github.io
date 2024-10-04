@@ -41,17 +41,17 @@ sections:
       subtitle: ''
     design:
       columns: '1'
-  - block: projects
+  - block: projectsen
 
   - block: markdown
     content:
-      title: '2024 2학기'
+      title: '2024 autumn'
       subtitle: ''
     design:
       columns: '1'
-  - block: menu
+  - block: menuen
 
-  - block: card3
+  - block: card3en
 
 
 ---
