@@ -17,8 +17,8 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: ''
-    org_name: 'JeongWooHyeon portfolio site'
-    description: 'JeongWooHyeon portfolio site'
+    org_name: '전북대 정우현 포트폴리오 사이트'
+    description: '전북대 정우현의 포트폴리오 사이트'
     ogImage: '/images/kong.jpg'
     twitter: 'GetResearchDev'
   analytics:
