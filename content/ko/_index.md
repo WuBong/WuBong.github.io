@@ -38,6 +38,8 @@ sections:
     design:
       columns: '1'
   - block: projects
+
+sections:
   - block: slider
 
 ---
