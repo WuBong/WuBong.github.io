@@ -8,7 +8,6 @@ image: images/kong.jpg
 design:
   # Default section spacing
   spacing: "6rem"
-  background: blue 
 
 sections:
   - block: markdown
