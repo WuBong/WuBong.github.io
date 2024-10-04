@@ -1,110 +1,74 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이미지 슬라이더</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    /* 슬라이더 기본 설정 */
+    .slider {
+      width: 100%;
+      max-width: 800px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+    }
 
-        .slider {
-            position: relative;
-            max-width: 600px;
-            margin: auto;
-            overflow: hidden;
-        }
+    /* 슬라이드 컨테이너 */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
 
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+    /* 각 슬라이드 */
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
 
-        .slide {
-            min-width: 100%;
-        }
-
-        img {
-            width: 100%;
-            display: block;
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            cursor: pointer;
-            z-index: 1;
-        }
-
-        .prev {
-            left: 0;
-        }
-
-        .next {
-            right: 0;
-        }
-
-        .fade {
-            display: none;
-        }
-    </style>
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
-<div class="slider">
+  <!-- 이미지 슬라이더 -->
+  <div class="slider">
     <div class="slides">
-        <div class="slide fade">
-            <img src="/images/unity.jpg" alt="이미지 1">
-        </div>
-        <div class="slide fade">
-            <img src="/images/rock.jpg" alt="이미지 2">
-        </div>
-        <div class="slide fade">
-            <img src="/images/directx.jpg" alt="이미지 3">
-        </div>
+      <div class="slide">
+        <img src="directx.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="graphics.jpg" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="rock.jpg" alt="Slide 3">
+      </div>
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+  </div>
 
-<script>
+  <script>
     let slideIndex = 0;
-    showSlides();
+    const slides = document.querySelectorAll(".slide");
 
     function showSlides() {
-        let slides = document.getElementsByClassName("slide");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1; }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // 3초 후 다음 슬라이드
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // 3초마다 슬라이드 변경
     }
 
-    function plusSlides(n) {
-        slideIndex += n;
-        showSlidesManual();
-    }
-
-    function showSlidesManual() {
-        let slides = document.getElementsByClassName("slide");
-        if (slideIndex > slides.length) { slideIndex = 1; }
-        if (slideIndex < 1) { slideIndex = slides.length; }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-    }
-</script>
+    showSlides();
+  </script>
 
 </body>
 </html>
