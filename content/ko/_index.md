@@ -33,6 +33,8 @@ sections:
           position: center
           parallax: false
   - block: slider
+    position: center
+    
   - block: markdown
     content:
       title: '📚 projects'
@@ -40,5 +42,6 @@ sections:
     design:
       columns: '1'
   - block: projects
+
 
 ---
