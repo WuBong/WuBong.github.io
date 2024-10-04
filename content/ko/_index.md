@@ -36,9 +36,7 @@ sections:
       subtitle: ''
     design:
       columns: '1'
-sections:
   - block: projects
-sections:
   - block: slider
 
 ---
