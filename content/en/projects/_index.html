@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card View Example</title>
+    <style>
+        /* 카드 레이아웃 스타일 */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* 카드 개별 스타일 */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* 카드 이미지 */
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* 카드 내용 */
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* 카드 버튼 */
+        .card-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .card-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- 카드 1 -->
+        <div class="card">
+            <img src="/images/graphics.jpg" alt="Card Image 1">
+            <div class="card-content">
+                <h2 class="card-title">graphics learning</h2>
+                <p class="card-description">using DirectX</p>
+                <a href="https://blog.naver.com/dngus2063/223522910240" class="card-button">Read More</a>
+            </div>
+        </div>
+
+        <!-- 카드 2 -->
+        <div class="card">
+            <img src="/images/unity_project.jpg" alt="Card Image 2">
+            <div class="card-content">
+                <h2 class="card-title">gamedevelop</h2>
+                <p class="card-description">using unity</p>
+                <a href="https://blog.naver.com/dngus2063/223503418513" class="card-button">Read More</a>
+            </div>
+        </div>
+
+        <!-- 카드 3 -->
+        <div class="card">
+            <img src="/images/socket.jpg" alt="Card Image 3">
+            <div class="card-content">
+                <h2 class="card-title">C++ socket programming</h2>
+                <p class="card-description">using socket programming and multithread.</p>
+                <a href="https://github.com/WuBong/shoot_enemy" class="card-button">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
