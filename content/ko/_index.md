@@ -3,10 +3,10 @@
 title: ""
 date: 2022-10-24
 image: images/kong.jpg
-#type: landing
+type: landing
 
 design:
-  # Default section spacing
+  #\= Default section spacing
   spacing: "6rem"
 
 
@@ -32,10 +32,10 @@ sections:
           size: cover
           position: center
           parallax: false
-  sections:
+sections:
   - block: slider
 
-  sections:
+sections:
   - block: markdown
     content:
       title: '📚 projects'

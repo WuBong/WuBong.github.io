@@ -19,9 +19,9 @@ en:
 #  languageCode: zh-Hans
 #  contentDir: content/zh
 #  title: Chinese website title...
-  params:
-    description: jeong woo hyeon's portfolio site
-    ogImage: "/images/avatar.jpg" 
+#  params:
+#    description: jeong woo hyeon's portfolio site
+#    ogImage: "/images/avatar.jpg" 
 #  menu:
 #    main:
 #      - name: 传
