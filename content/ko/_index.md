@@ -32,10 +32,7 @@ sections:
           size: cover
           position: center
           parallax: false
-sections:
   - block: slider
-
-sections:
   - block: markdown
     content:
       title: '📚 projects'
