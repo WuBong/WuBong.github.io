@@ -45,12 +45,13 @@ sections:
 
   - block: markdown
     content:
-      title: '2024autumn'
+      title: '2024 2학기'
       subtitle: ''
     design:
       columns: '1'
   - block: menu
 
+  - block: card3
 
 
 ---
