@@ -10,13 +10,13 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: markdown
-    content:
-      title: '📚 projects'
-      subtitle: ''
-    design:
-      columns: '1'
-  - block: projects
+  #- block: markdown
+  #  content:
+  #    title: '📚 projects'
+  #    subtitle: ''
+  #  design:
+  #    columns: '1'
+  #- block: projects
   - block: slider
 
 ---
